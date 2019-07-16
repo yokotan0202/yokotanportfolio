@@ -1,0 +1,274 @@
+/*--------------------------------------------------------------
+Body & html setting
+--------------------------------------------------------------*/
+
+/* Body Setting */
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #eee9e9;
+}
+
+/* Html Setting */
+
+html {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+
+/* Webkit Scrollbar Setting */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*--------------------------------------------------------------
+# NavBar Setting
+--------------------------------------------------------------*/
+
+.navbar {
+    position: fixed;
+    width: 100vw;
+    color: transparent;
+    top: 10px;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Setting
+--------------------------------------------------------------*/
+
+.single-portfolio {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.single-portfolio figure img {
+    padding-top: 30px;
+    max-width: 100%;
+}
+
+.single-portfolio .content-area h1 {
+    margin-top: 20px;
+    font-size: 2.25rem;
+}
+
+.single-portfolio .content-area .entry-content {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #595959;
+}
+
+.entry-content a {
+    color: #ff9800;
+}
+
+.img-fluid {
+    padding: 0px;
+    max-width: 100%;
+    margin: 0px;
+}
+
+.img-fluid figure img {
+    padding: 0px;
+    padding-bottom: 0px;
+}
+
+.entry-image {
+    padding-top: 10px;
+    margin: 0px;
+}
+
+#web {
+    width: 1200px;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Category Settings
+--------------------------------------------------------------*/
+
+.single-portfolio .entry-meta {
+    margin-top: 24px;
+}
+
+.single-portfolio .entry-meta label {
+    display: block;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.single-portfolio .date-format, .single-portfolio .post-category, .single-portfolio {
+    display: block;
+    margin-bottom: 26px;
+}
+
+.category {
+    color: black;
+    font-weight: 400px;
+}
+
+.single-portfolio span, .single-portfolio .entry-meta a {
+    color: #bfbfbf;
+}
+
+/*--------------------------------------------------------------
+# Post Nav Settings
+--------------------------------------------------------------*/
+
+.post-nav {
+    margin: 36px 0 0;
+}
+
+.post-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 70px;
+}
+
+.flex {
+    display: flex;
+}
+
+.post-nav ion-icon {
+    padding: 0;
+    margin: 0;
+    font-size: 70px;
+    transition: 0.5s ease;
+    color: black;
+}
+
+/*--------------------------------------------------------------
+# Footer Settings
+--------------------------------------------------------------*/
+
+footer {
+    background-color: black;
+    color: #fff;
+    left: 20px;
+}
+
+.cv {
+    color: white;
+    text-decoration: none;
+}
+
+.cv:hover {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+.mail-ic {
+    color: white;
+    text-decoration: none;
+}
+
+.mail-ic:hover {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+ion-icon {
+    padding: 5px;
+    font-size: 48px;
+    transition: 0.5s ease;
+    color: #fff;
+}
+
+#icon {
+    transition: 0.5s ease;
+    color: #fff;
+    font-size: 53px;
+}
+
+ion-icon:hover, #icon:hover {
+    color: #ff9800;
+}
+
+.text-uppercase {
+    font-style: italic;
+}
+
+/*--------------------------------------------------------------
+# @meida Settings
+--------------------------------------------------------------*/
+
+/* min-width: 992px */
+
+@media screen and (min-width: 992px) {
+    .single-portfolio {
+        padding-top: 90px;
+    }
+}
+
+/* min-width: 768px */
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        position: fixed;
+        right: 10px;
+        font-size: 70px;
+        color: grey;
+    }
+}
+
+/* min-width: 1200px */
+
+@media screen and (min-width: 1200px) {
+    .single-portfolio {
+        padding-top: 115px;
+    }
+}
+
+/* min-width: 768px & max-width: 1199.98px */
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .navbar-brand img {
+        width: 150px;
+    }
+    .navbar {
+        padding: 0;
+        margin: 10px;
+        width: 99vw;
+    }
+    .navbar-nav {
+        position: fixed;
+        right: 18px;
+        font-size: 3vh;
+    }
+}
+
+/* min-width: 576px */
+
+@media screen and (min-width: 576px) {
+    .single-portfolio {
+        padding-top: 45px;
+    }
+}
+
+/* max-width: 480px */
+
+@media (max-width: 480px) {
+    .navbar {
+        position: fixed;
+        padding-top: 10px;
+        top: 0;
+    }
+    .navbar-brand img {
+        padding-top: 5px;
+        width: 100px;
+    }
+    .scrolled {
+        padding-top: 10px;
+        background: #eee9e9;
+    }
+}
